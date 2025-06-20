@@ -20,33 +20,49 @@ const config = {
     },
     extend: {
       colors: {
-        // SoFi's actual brand colors
+        // SoFi's exact brand colors from sofi.com
         sofi: {
-          purple: {
-            50: "#faf7ff",
-            100: "#f3ecff",
-            200: "#e9dcff",
-            300: "#d7bfff",
-            400: "#be93ff",
-            500: "#a05eff", // Primary purple
-            600: "#8b3aff",
-            700: "#7c2aed",
-            800: "#6822c7",
-            900: "#571da3",
-            950: "#380f70",
+          // Primary turquoise/teal (exact from sofi.com)
+          teal: {
+            50: "#f0fdfa",
+            100: "#ccfbf1",
+            200: "#7dd3fc", // Lighter version of primary
+            300: "#38bdf8", // Mid-tone
+            400: "#0ea5e9", // Slightly darker
+            500: "#00A2C7", // EXACT SoFi primary turquoise
+            600: "#006B87", // EXACT SoFi button/darker color
+            700: "#0c4a6e", // Darker variations
+            800: "#075985",
+            900: "#0c4a6e",
+            950: "#083344",
           },
+          // Blue variations for gradients and accents
           blue: {
-            50: "#eff8ff",
-            100: "#dbeefe",
-            200: "#bfe2fe",
-            300: "#93d1fd",
-            400: "#60b6fa",
-            500: "#3b9af6",
-            600: "#2570eb", // Primary blue
-            700: "#1d5dd8",
-            800: "#1e4baf",
-            900: "#1e408a",
-            950: "#172954",
+            50: "#eff6ff",
+            100: "#dbeafe",
+            200: "#bfdbfe",
+            300: "#93c5fd",
+            400: "#60a5fa",
+            500: "#3b82f6",
+            600: "#006B87", // Same as teal-600 for consistency
+            700: "#1e40af",
+            800: "#1e3a8a",
+            900: "#1e3a8a",
+            950: "#172554",
+          },
+          // Purple for accents (matches the circular 4.00% element)
+          purple: {
+            50: "#faf5ff",
+            100: "#f3e8ff",
+            200: "#e9d5ff",
+            300: "#d8b4fe",
+            400: "#c084fc",
+            500: "#a855f7", // Primary purple
+            600: "#9333ea", // Darker purple (matches sofi.com dark elements)
+            700: "#7c3aed",
+            800: "#6b21a8",
+            900: "#581c87",
+            950: "#3b0764",
           },
           green: {
             50: "#f0fdf4",

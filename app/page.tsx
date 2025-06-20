@@ -59,13 +59,13 @@ export default function ComponentLibraryDocs() {
             <span className="font-bold text-xl sofi-gradient-text">SoFi UI</span>
           </div>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              onClick={() => window.open('https://github.com/MunishMummadi/SoFi-Components', '_blank', 'noopener,noreferrer')}
+            >
               <Github className="h-4 w-4 mr-2" />
               GitHub
-            </Button>
-            <Button size="sm">
-              <Download className="h-4 w-4 mr-2" />
-              Download
             </Button>
           </div>
         </div>
@@ -147,12 +147,14 @@ const config = {
     extend: {
       colors: {
         sofi: {
-          purple: {
-            500: "#a05eff",
-            600: "#8b3aff",
+          teal: {
+            400: "#0ea5e9",
+            500: "#00A2C7", // EXACT SoFi primary turquoise
+            600: "#006B87", // EXACT SoFi button color
+            700: "#0c4a6e",
           },
           blue: {
-            600: "#2570eb",
+            600: "#006B87", // Same as button color
           },
           gray: {
             50: "#f9fafb",
@@ -391,7 +393,7 @@ export function CardDemo() {
                   preview={
                     <div className="space-y-4 w-full max-w-sm">
                       <Input placeholder="Default input" />
-                      <Input placeholder="Large input" size="lg" />
+                      <Input placeholder="Large input" className="h-12 px-4 text-base" />
                       <Input placeholder="Error state" variant="error" />
                       <Input placeholder="Success state" variant="success" />
                     </div>
@@ -418,10 +420,10 @@ export function InputDemo() {
 <Input variant="error" placeholder="Error state" />
 <Input variant="success" placeholder="Success state" />
 
-// Input sizes
-<Input size="sm" placeholder="Small" />
-<Input size="default" placeholder="Default" />
-<Input size="lg" placeholder="Large" />
+// Input sizes (using className)
+<Input className="h-8 px-2 text-sm" placeholder="Small" />
+<Input placeholder="Default" />
+<Input className="h-12 px-4 text-base" placeholder="Large" />
 
 // Input types
 <Input type="email" placeholder="Email" />

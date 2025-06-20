@@ -37,7 +37,7 @@ export default function SoFiShowcase() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sofi-purple-50 via-white to-sofi-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-sofi-teal-50 via-white to-sofi-blue-50">
       {/* Navigation */}
       <Navigation items={navigationItems} />
 
@@ -198,7 +198,7 @@ export default function SoFiShowcase() {
             </Form>
           </CardContent>
           <CardFooter className="justify-center">
-            <Button variant="secondary" size="lg" className="bg-white text-sofi-purple-600 hover:bg-white/90">
+            <Button variant="secondary" size="lg" className="bg-white text-sofi-teal-600 hover:bg-white/90">
               Get Started Today
             </Button>
           </CardFooter>

@@ -10,7 +10,7 @@ const badgeVariants = cva(
         default: "border-transparent sofi-gradient text-white",
         secondary: "border-transparent bg-sofi-gray-100 text-sofi-gray-900 hover:bg-sofi-gray-200",
         destructive: "border-transparent bg-red-500 text-white hover:bg-red-600",
-        outline: "text-sofi-purple-600 border-sofi-purple-200 hover:bg-sofi-purple-50",
+        outline: "text-sofi-teal-600 border-sofi-teal-200 hover:bg-sofi-teal-50",
         success: "border-transparent bg-sofi-green-500 text-white hover:bg-sofi-green-600",
         warning: "border-transparent bg-amber-500 text-white hover:bg-amber-600",
       },

@@ -8,7 +8,7 @@ export default function ExampleShowcase() {
   return (
     <div className="p-8 space-y-8">
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold text-sofi-blue-900">SoFi Component Library</h1>
+        <h1 className="text-3xl font-bold text-sofi-teal-600">SoFi Component Library</h1>
         <p className="text-sofi-gray-600">A modern component library inspired by SoFi's design system</p>
       </div>
 

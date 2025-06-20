@@ -10,13 +10,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "sofi-gradient text-white hover:shadow-sofi-lg hover:shadow-sofi-purple-500/25",
+        default: "bg-sofi-teal-600 text-white hover:bg-sofi-teal-700 hover:shadow-sofi-lg",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border-2 border-sofi-purple-500 bg-transparent text-sofi-purple-500 hover:bg-sofi-purple-50 hover:shadow-sofi-md",
+          "border-2 border-sofi-teal-500 bg-transparent text-sofi-teal-500 hover:bg-sofi-teal-50 hover:shadow-sofi-md",
         secondary: "bg-sofi-gray-100 text-sofi-gray-900 hover:bg-sofi-gray-200 hover:shadow-sofi-md",
-        ghost: "text-sofi-purple-500 hover:bg-sofi-purple-50 hover:text-sofi-purple-600",
-        link: "text-sofi-purple-500 underline-offset-4 hover:underline",
+        ghost: "text-sofi-teal-500 hover:bg-sofi-teal-50 hover:text-sofi-teal-600",
+        link: "text-sofi-teal-500 underline-offset-4 hover:underline",
         success:
           "bg-sofi-green-500 text-white hover:bg-sofi-green-600 hover:shadow-sofi-lg hover:shadow-sofi-green-500/25",
       },
