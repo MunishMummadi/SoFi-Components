@@ -620,6 +620,7 @@ export function ProgressDemo() {
     </div>
   </CardContent>
 </Card>`}
+                      language="tsx"
                     />
                   </div>
                 </div>
@@ -661,6 +662,7 @@ export function ProgressDemo() {
     <Button className="w-full">Create Account</Button>
   </CardContent>
 </Card>`}
+                      language="tsx"
                     />
                   </div>
                 </div>

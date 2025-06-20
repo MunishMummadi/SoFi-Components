@@ -4,6 +4,8 @@ import * as React from "react"
 import { Check, Copy } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 interface CodeBlockProps {
   code: string
@@ -22,9 +24,26 @@ export function CodeBlock({ code, language = "tsx", className }: CodeBlockProps)
 
   return (
     <div className={cn("relative", className)}>
-      <pre className="bg-sofi-gray-900 text-sofi-gray-100 p-4 rounded-lg overflow-x-auto text-sm">
-        <code className={`language-${language}`}>{code}</code>
-      </pre>
+      <div className="bg-sofi-gray-900 rounded-lg overflow-hidden">
+        <SyntaxHighlighter
+          language={language}
+          style={tomorrow}
+          customStyle={{
+            margin: 0,
+            padding: '1rem',
+            background: 'rgb(17 24 39)',
+            fontSize: '0.875rem',
+            lineHeight: '1.25rem',
+          }}
+          codeTagProps={{
+            style: {
+              fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace',
+            }
+          }}
+        >
+          {code}
+        </SyntaxHighlighter>
+      </div>
       <Button
         size="sm"
         variant="ghost"

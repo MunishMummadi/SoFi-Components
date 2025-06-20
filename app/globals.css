@@ -33,6 +33,54 @@
     --ring: 188 100% 39%;
 
     --radius: 0.75rem;
+
+    --sofi-teal-50: 240 254 248;
+    --sofi-teal-100: 204 251 241;
+    --sofi-teal-200: 153 246 228;
+    --sofi-teal-300: 94 234 212;
+    --sofi-teal-400: 45 212 191;
+    --sofi-teal-500: 20 184 166;
+    --sofi-teal-600: 13 148 136;
+    --sofi-teal-700: 15 118 110;
+    --sofi-teal-800: 17 94 89;
+    --sofi-teal-900: 19 78 74;
+    --sofi-teal-950: 4 47 46;
+
+    --sofi-gray-50: 249 250 251;
+    --sofi-gray-100: 243 244 246;
+    --sofi-gray-200: 229 231 235;
+    --sofi-gray-300: 209 213 219;
+    --sofi-gray-400: 156 163 175;
+    --sofi-gray-500: 107 114 128;
+    --sofi-gray-600: 75 85 99;
+    --sofi-gray-700: 55 65 81;
+    --sofi-gray-800: 31 41 55;
+    --sofi-gray-900: 17 24 39;
+    --sofi-gray-950: 3 7 18;
+
+    --sofi-purple-50: 250 245 255;
+    --sofi-purple-100: 243 232 255;
+    --sofi-purple-200: 233 213 255;
+    --sofi-purple-300: 196 181 253;
+    --sofi-purple-400: 167 139 250;
+    --sofi-purple-500: 139 92 246;
+    --sofi-purple-600: 124 58 237;
+    --sofi-purple-700: 109 40 217;
+    --sofi-purple-800: 91 33 182;
+    --sofi-purple-900: 76 29 149;
+    --sofi-purple-950: 46 16 101;
+
+    --sofi-orange-50: 255 247 237;
+    --sofi-orange-100: 255 237 213;
+    --sofi-orange-200: 254 215 170;
+    --sofi-orange-300: 253 186 116;
+    --sofi-orange-400: 251 146 60;
+    --sofi-orange-500: 249 115 22;
+    --sofi-orange-600: 234 88 12;
+    --sofi-orange-700: 194 65 12;
+    --sofi-orange-800: 154 52 18;
+    --sofi-orange-900: 124 45 18;
+    --sofi-orange-950: 67 20 7;
   }
 
   .dark {
@@ -97,3 +145,5 @@
     @apply bg-gradient-to-r from-sofi-purple-500 to-sofi-purple-600;
   }
 }
+
+

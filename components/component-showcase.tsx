@@ -39,13 +39,13 @@ export function ComponentShowcase({ title, description, preview, code, installat
 
       <div>
         <h4 className="text-lg font-semibold text-sofi-gray-900 mb-3">Usage</h4>
-        <CodeBlock code={code} />
+        <CodeBlock code={code} language="tsx" />
       </div>
 
       {usage && (
         <div>
           <h4 className="text-lg font-semibold text-sofi-gray-900 mb-3">Additional Examples</h4>
-          <CodeBlock code={usage} />
+          <CodeBlock code={usage} language="tsx" />
         </div>
       )}
     </div>
