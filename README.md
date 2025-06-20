@@ -2,7 +2,7 @@
 
 A modern React component library built with SoFi's design system. Clean, accessible, and performant components for building financial applications.
 
-**🔗 [View on GitHub](https://github.com/MunishMummadi/SoFi-Components)**
+**[View on GitHub](https://github.com/MunishMummadi/SoFi-Components)**
 
 ## Features
 
