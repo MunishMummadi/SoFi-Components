@@ -24,8 +24,8 @@ const config = {
         sofi: {
           // Primary turquoise/teal (exact from sofi.com)
           teal: {
-            50: "#f0fdfa",
-            100: "#ccfbf1",
+            50: "#f0fdfa",   // Very light teal for subtle backgrounds
+            100: "#ccfbf1",  // Light teal for hover backgrounds
             200: "#7dd3fc", // Lighter version of primary
             300: "#38bdf8", // Mid-tone
             400: "#0ea5e9", // Slightly darker

@@ -94,7 +94,7 @@ const NavigationItem: React.FC<{ item: NavigationItem }> = ({ item }) => {
     return (
       <div className="relative group">
         <button
-          className="flex items-center space-x-1 text-sm font-medium text-sofi-gray-700 hover:text-sofi-purple-600 transition-colors"
+          className="flex items-center space-x-1 text-sm font-medium text-sofi-gray-700 hover:text-sofi-teal-600 transition-colors"
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}
         >
@@ -103,16 +103,16 @@ const NavigationItem: React.FC<{ item: NavigationItem }> = ({ item }) => {
         </button>
         {isOpen && (
           <div
-            className="absolute top-full left-0 mt-2 w-48 rounded-lg border bg-background shadow-sofi-lg"
+            className="absolute top-full left-0 mt-2 w-48 bg-white border border-sofi-gray-200 rounded-lg shadow-sofi-lg z-50"
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
           >
-            <div className="p-2">
+            <div className="py-2">
               {item.children.map((child, index) => (
                 <Link
                   key={index}
                   href={child.href}
-                  className="block px-3 py-2 text-sm text-sofi-gray-700 hover:text-sofi-purple-600 hover:bg-sofi-purple-50 rounded-md transition-colors"
+                  className="block px-3 py-2 text-sm text-sofi-gray-700 hover:text-sofi-teal-600 hover:bg-sofi-teal-50 rounded-md transition-colors"
                 >
                   {child.label}
                 </Link>
@@ -127,7 +127,7 @@ const NavigationItem: React.FC<{ item: NavigationItem }> = ({ item }) => {
   return (
     <Link
       href={item.href}
-      className="text-sm font-medium text-sofi-gray-700 hover:text-sofi-purple-600 transition-colors"
+      className="text-sm font-medium text-sofi-gray-700 hover:text-sofi-teal-600 transition-colors"
     >
       {item.label}
     </Link>
@@ -141,7 +141,7 @@ const MobileNavigationItem: React.FC<{ item: NavigationItem }> = ({ item }) => {
     return (
       <div>
         <button
-          className="flex items-center justify-between w-full text-left text-sm font-medium text-sofi-gray-700 hover:text-sofi-purple-600 transition-colors"
+          className="flex items-center justify-between w-full text-left text-sm font-medium text-sofi-gray-700 hover:text-sofi-teal-600 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span>{item.label}</span>
@@ -153,7 +153,7 @@ const MobileNavigationItem: React.FC<{ item: NavigationItem }> = ({ item }) => {
               <Link
                 key={index}
                 href={child.href}
-                className="block text-sm text-sofi-gray-600 hover:text-sofi-purple-600 transition-colors"
+                className="block text-sm text-sofi-gray-600 hover:text-sofi-teal-600 transition-colors"
               >
                 {child.label}
               </Link>
@@ -167,7 +167,7 @@ const MobileNavigationItem: React.FC<{ item: NavigationItem }> = ({ item }) => {
   return (
     <Link
       href={item.href}
-      className="block text-sm font-medium text-sofi-gray-700 hover:text-sofi-purple-600 transition-colors"
+      className="block text-sm font-medium text-sofi-gray-700 hover:text-sofi-teal-600 transition-colors"
     >
       {item.label}
     </Link>

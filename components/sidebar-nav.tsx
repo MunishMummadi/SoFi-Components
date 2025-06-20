@@ -4,15 +4,14 @@ import * as React from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 
+interface SidebarNavItem {
+  title: string
+  href: string
+  items?: SidebarNavItem[]
+}
+
 interface SidebarNavProps {
-  items: {
-    title: string
-    href: string
-    items?: {
-      title: string
-      href: string
-    }[]
-  }[]
+  items: SidebarNavItem[]
   className?: string
 }
 
@@ -46,7 +45,7 @@ export function SidebarNav({ items, className }: SidebarNavProps) {
             className={cn(
               "block px-3 py-2 text-sm font-medium rounded-md transition-colors",
               activeSection === item.href.slice(1)
-                ? "bg-sofi-purple-100 text-sofi-purple-700"
+                ? "bg-sofi-teal-100 text-sofi-teal-700"
                 : "text-sofi-gray-600 hover:text-sofi-gray-900 hover:bg-sofi-gray-100",
             )}
           >
@@ -61,7 +60,7 @@ export function SidebarNav({ items, className }: SidebarNavProps) {
                   className={cn(
                     "block px-3 py-1 text-sm rounded-md transition-colors",
                     activeSection === subItem.href.slice(1)
-                      ? "bg-sofi-purple-50 text-sofi-purple-600"
+                      ? "bg-sofi-teal-50 text-sofi-teal-600"
                       : "text-sofi-gray-500 hover:text-sofi-gray-700 hover:bg-sofi-gray-50",
                   )}
                 >
