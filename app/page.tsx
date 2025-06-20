@@ -64,8 +64,7 @@ export default function ComponentLibraryDocs() {
               size="sm" 
               onClick={() => window.open('https://github.com/MunishMummadi/SoFi-Components', '_blank', 'noopener,noreferrer')}
             >
-              <Github className="h-4 w-4 mr-2" />
-              GitHub
+              <Github className="h-6 w-6 mr-2" />
             </Button>
           </div>
         </div>
